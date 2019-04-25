@@ -1,3 +1,5 @@
-table.rc1 th{
-    background-color: #000;
-}
+table.rc1 {
+    border: 2px solid #42b983;
+    border-radius: 3px;
+    background-color: #333;
+  }
