@@ -1,25 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            CO Rocks Identifier
-        </title>
-        <h1>The Tool</h1>
-        <hr />
-    </head>
-    <body>
-    <!-- <script> alert("You have discovered the tool!"); </script> *// -->
-    <table id="rc1">
+<!-- component template -->
+<script type="text/x-template" id="grid-template">
+    <table>
+      <thead>
         <tr>
-            <th>Rock Name</th>
-            <th>Type of Rock</th>
-            <th>Rock Description</th>
+          <th v-for="key in columns"
+            @click="sortBy(key)"
+            :class="{active: sortKey == key}">
+            {{key | capitalize}}
+            <span class="arrow"
+              :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
+            </span>
+          </th>
         </tr>
-        <tr>
-            <td>Gold</td>
-            <td>Mineral</td>
-            <td>Shiny and Goldish Color.</td>
+      </thead>
+      <tbody>
+        <tr v-for="
+          entry in data
+          | filterBy filterKey
+          | orderBy sortKey sortOrders[sortKey]">
+          <td v-for="key in columns">
+            {{entry[key]}}
+          </td>
         </tr>
+      </tbody>
     </table>
-    </body>
-</html>
+  </script>
+  
+  <!-- demo root element -->
+  <div id="demo">
+    <form id="search">
+      Search <input name="query" v-model="searchQuery">
+    </form>
+    <demo-grid
+      :data="gridData"
+      :columns="gridColumns"
+      :filter-key="searchQuery">
+    </demo-grid>
+  </div>
+  
+<!--Derived from https://v1.vuejs.org/examples/grid-component.html -->
