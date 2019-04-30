@@ -1,4 +1,4 @@
-<div id="navigation">
+<div id="nav">
     <ul>
         <li class="home"><a href="index.html">Homepage</a> </li>
         <li class="tool"><a href="HTMLPages/tool.html">Tool</a> </li>
