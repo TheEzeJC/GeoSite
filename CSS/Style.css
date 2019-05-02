@@ -1,8 +1,7 @@
 ul#navbar{
-    display:inline;
-    background-color: aquamarine;
+    background-color: #5464;
 }
 
 ul#navbar li{
-    display:inline;
+    background-color: #6645;
 }
