@@ -1,12 +1,4 @@
-#main {
-    margin: auto;
-    width: 80%;
-}
-
-#navbar{
-    background-color: #5464;
-}
-
-#navbar li{
-    background-color: #6645;
+ul#navbar {
+    margin: 0;
+    background-color: #444;
 }
