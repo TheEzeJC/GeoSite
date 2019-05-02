@@ -1,4 +1,17 @@
-ul#navbar {
-    margin: 0;
-    background-color: #444;
+#main {
+    margin: auto;
+    width: 80%;
+}
+#navbar {
+    width: 100%;
+    height: 40px;
+}
+#navbar ul{
+    list-style: none;
+}
+#navbar li{
+    display: inline;
+}
+#navbar a{
+    display: block;
 }
