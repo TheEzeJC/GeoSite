@@ -1,7 +1,12 @@
-ul#navbar{
+#main {
+    margin: auto;
+    width: 80%;
+}
+
+#navbar{
     background-color: #5464;
 }
 
-ul#navbar li{
+#navbar li{
     background-color: #6645;
 }
