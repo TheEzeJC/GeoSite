@@ -5,14 +5,15 @@
             CO Rocks Identification
         </title>
         <link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="//code.jquery.com/jquery.min.js"></script>
     </head>
     <body>
             <script>
-                $(function(){
-                  $("#navbar").load("navbar.html");
-                });
-            </script>
+                    $.get("navbar.html", function(data){
+                        $("#nav-placeholder").replaceWith(data);
+                    });
+                    </script>
+    <div id="nav-placeholder"></div>
         <div id="main">
             <div id="jumbotron">
                 <div id="Logo">
