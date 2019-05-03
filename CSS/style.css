@@ -4,15 +4,20 @@
 }
 #navbar {
     width: 100%;
-}
-#navbar ul{
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
+#navbar ul{
+    list-style: none;
+}
 #navbar li{
-    display: inline;
+    display: block;
 }
 #navbar a{
     display: block;
+    text-decoration: none;
+}
+#navbar a:hover {
+	background-color:#009;
+	color:rgb(85, 0, 0);
 }
