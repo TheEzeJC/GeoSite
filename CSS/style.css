@@ -11,7 +11,7 @@
     padding: 0;
 }
 #navbar li{
-    display: block;
+    display: inline;
 }
 #navbar a{
     display: block;
