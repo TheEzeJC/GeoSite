@@ -8,8 +8,9 @@
     height: 40px;
 }
 #navbar ul{
-    list-style: none;
-    background-color: navy;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
 }
 #navbar li{
     display: inline;
