@@ -15,6 +15,7 @@
     display: block;
 }
 #navbar a{
+    float: left;
     display: block;
 }
 #navbar a:hover {
