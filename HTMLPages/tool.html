@@ -13,14 +13,49 @@
                 <li class="tool"><a href="/GeoSite/HTMLPages/tool.html">Tool</a> </li>
                 <li class="moreInfo"><a href="/GeoSite/HTMLPages/info.html">More Information</a></li>
             </ul>
+            <input type="text" id="search" onkeyup="searchFunction()" placeholder="Search by rock name...">
+            <script>
+                function searchFunction() {
+                  var input, filter, ul, li, a, i, txtValue;
+                  input = document.getElementById('search');
+                  filter = input.value.toUpperCase();
+                  ul = document.getElementById("database");
+                  li = ul.getElementsByTagName('li');
+                
+                  for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      li[i].style.display = "";
+                    } else {
+                      li[i].style.display = "none";
+                    }
+                  }
+                }
+                </script>
+
+<ul id="database">
+    <li><a href="#">Adele</a></li>
+    <li><a href="#">Agnes</a></li>
+  
+    <li><a href="#">Billy</a></li>
+    <li><a href="#">Bob</a></li>
+  
+    <li><a href="#">Calvin</a></li>
+    <li><a href="#">Christina</a></li>
+    <li><a href="#">Cindy</a></li>
+  </ul>
+
             <div id="jumbotron">
                 <div id="Logo">
                 </div>
             </div>
             Tool
-            <div id="Footer">
+        </div>
+        <footer>
+            <div id="footer">
                 Copyright TheEzeJC
             </div>
-        </div>
+        </footer>
     </body>
 </html>
