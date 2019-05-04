@@ -9,13 +9,20 @@ var firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
-var ref = database.ref();
+var ref = database.ref("rockdb");
 
 ref.on('value', gotData, errData);
 
 function gotData(data) {
-  console.log(data.val());
-  var georockdb = data.val();
+  var rockid = data.val();
+  var keys = Object.keys(rockid);
+  console.log(keys);
+  for (var i = 0; i < keys.length; i++) {
+    var k = keys[i];
+    var name = rockid[k].name;
+    var color = rockid[k].color;
+    console.log(name,color);
+  }
 }
 function errData(err){
   console.log("Error!")
