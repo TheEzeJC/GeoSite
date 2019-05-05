@@ -1,6 +1,21 @@
+body {
+    background-image: url("/GeoSite/Images/background.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+#jumbotron{
+    color: #fff;
+    padding: none;
+    font-size: 30px;
+}
 #main {
     margin: auto;
     width: 80%;
+    
 }
 #navbar {
     width: 100%;
@@ -32,13 +47,28 @@
 /* Tool Table*/
 #rockt {
     width: auto;
+    text-align: center;
+    padding: 0px;
+}
+#rockt th:hover {
+    background-color:rgb(255, 230, 0);
+    color: rgb(0, 0, 0);
 }
 #rockt th{
     width: auto;
     padding: 10px;
-    background-color: aqua;
+    background-color: rgb(243, 77, 0);
+    color: rgb(226, 226, 226);
 }
 #rockt tr{
     width: auto;
     background-color: gray;
+    font-size: 30px;
+}
+#rockt tr:hover {
+    background-color:rgb(255, 0, 0);
+    color: rgb(204, 204, 204);
+}
+#footer {
+    color: #fff;
 }
