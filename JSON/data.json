@@ -5,6 +5,42 @@
         "rockDesc": "Found near lava."
     },
     {
+        "rockName":"Yule Marble",
+        "rockType": "Metamorphic",
+        "rockColor": "White",
+        "rockDesc": "Metamorphosed Limestone."
+    },
+    {
+        "rockName":"Gold",
+        "rockType": "Mineral",
+        "rockColor": "Yellow",
+        "rockDesc": "Found everywhere."
+    },
+    {
+        "rockName":"Aquamarine",
+        "rockType": "Gemstone",
+        "rockColor": "Light Blue",
+        "rockDesc": "Colorado State Gemstone."
+    },
+    {
+        "rockName":"Iron",
+        "rockType": "Mineral",
+        "rockColor": "Silver",
+        "rockDesc": "Found almost everwhere Turns red when in contact with oxygen."
+    },
+    {
+        "rockName":"Obsidian",
+        "rockType": "Mineral",
+        "rockColor": "Translucent Black",
+        "rockDesc": "Found near lava."
+    },
+        {
+        "rockName":"Limestone",
+        "rockType": "Sedimentary",
+        "rockColor": "White",
+        "rockDesc": "Often made of skeletal remains."
+    },
+    {
         "rockName":"Basalt",
         "rockType": "Igneous",
         "rockColor": "Black",
