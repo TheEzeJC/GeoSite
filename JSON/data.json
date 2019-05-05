@@ -1,10 +1,12 @@
 [{
         "rockName":"Diamond",
         "rockType": "Mineral",
-        "rockColor": "Transparent"
+        "rockColor": "Transparent",
+        "rockDesc": "Found near lava."
     },
     {
         "rockName":"Basalt",
         "rockType": "Igneous",
-        "rockColor": "Black"
+        "rockColor": "Black",
+        "rockDesc": "Found near volcanoes."
 }]
