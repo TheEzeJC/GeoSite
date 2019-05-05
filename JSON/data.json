@@ -1,13 +1,8 @@
-{
-    "Info":[
-        {"Name" : "Gold",
-        "Type" : "Mineral",
-        "Color" : "Yellow"},
-        {"Name" : "White Quartz",
-        "Type" : "Mineral",
-        "Color" : "White"},
-        {"Name" : "Pink Quartz",
-        "Type" : "Mineral",
-        "Color" : "Pink"}
-        ]
-}
+[{
+        "rockName":"Diamond",
+        "rockColor":"Transparent"
+    },
+    {
+        "rockName":"Basalt",
+        "rockColor":"Black"
+}]

@@ -1,1 +1,2 @@
-L
+function CreateTableFromJSON(){
+}
