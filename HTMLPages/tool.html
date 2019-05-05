@@ -5,7 +5,7 @@
             CO Rocks Identification Tool
         </title>
         <link rel="stylesheet" href="/GeoSite/CSS/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="/GeoSite/JS/tool.js"></script>
     </head>
     <body>
@@ -15,29 +15,14 @@
                 <li class="tool"><a href="/GeoSite/HTMLPages/tool.html">Tool</a> </li>
                 <li class="moreInfo"><a href="/GeoSite/HTMLPages/info.html">More Information</a></li>
             </ul>
-            <input type="text" id="search" onkeyup="searchFunction()" placeholder="Search by rock name...">
-            <script>
-                function searchFunction() {
-                  var input, filter, ul, li, a, i, txtValue;
-                  input = document.getElementById('search');
-                  filter = input.value.toUpperCase();
-                  ul = document.getElementById("database");
-                  li = ul.getElementsByTagName('li');
-                
-                  for (i = 0; i < li.length; i++) {
-                    a = li[i].getElementsByTagName("a")[0];
-                    txtValue = a.textContent || a.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                      li[i].style.display = "";
-                    } else {
-                      li[i].style.display = "none";
-                    }
-                  }
-                }
-                </script>
 
-<ol id="rockt">
-</ol>
+<table id="rockt">
+    <tr>
+        <th>Rock Name</th>
+        <th>Rock Type</th>
+        <th>Rock Color</th>
+    </tr>
+</table>
 
             <div id="jumbotron">
                 <div id="Logo">

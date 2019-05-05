@@ -1,8 +1,10 @@
 [{
         "rockName":"Diamond",
-        "rockColor":"Transparent"
+        "rockType": "Mineral",
+        "rockColor": "Transparent"
     },
     {
         "rockName":"Basalt",
-        "rockColor":"Black"
+        "rockType": "Igneous",
+        "rockColor": "Black"
 }]
