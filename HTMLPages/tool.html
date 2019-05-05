@@ -18,12 +18,12 @@
 
 <input type="text" id="userInput" onkeyup="searchBar()" placeholder="Search by rock name..">
 
-<table id="rockt">
+<table class="sortable" id="rockt">
     <tr>
-        <th>Rock Name</th>
-        <th>Rock Type</th>
-        <th>Rock Color</th>
-        <th>Rock Description</th>
+        <th onclick="sortTable(0)">Rock Name</th>
+        <th onclick="sortTable(1)">Rock Type</th>
+        <th onclick="sortTable(2)">Rock Color</th>
+        <th onclick="sortTable(3)">Rock Description</th>
     </tr>
 </table>
 
