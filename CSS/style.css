@@ -9,7 +9,6 @@ a, a:visited, a:hover, a:active {
 }
 #jumbotron{
     color: #fff;
-    padding: none;
     font-size: 30px;
 }
 #main {
@@ -18,9 +17,10 @@ a, a:visited, a:hover, a:active {
     
 }
 #navbar {
-    width: 100%;
+    width: 400px;
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 #navbar ul{
     list-style: none;
@@ -31,7 +31,7 @@ a, a:visited, a:hover, a:active {
 }
 #navbar a{
     display: block;
-    padding: 10px;
+    padding: 15px;
     background-color: rgb(78, 57, 25);
     color: #fff;
 }
@@ -41,8 +41,12 @@ a, a:visited, a:hover, a:active {
 }
 /*search bar*/
 #userInput {
-    width: 100px;
+    width: auto;
     border: #000 solid 1px;
+    padding: 10px 400px;
+    position: center;
+    font-size: 20px;
+    margin: 0;        
 }
 /* Tool Table*/
 #rockt {
